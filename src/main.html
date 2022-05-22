@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/src/initial.css" type="text/css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/initial.css" type="text/css" rel="stylesheet" />
     <title>Document</title>
-</head>
-<body class="page-wrapper">
-  
-    <div class="counter-container">
-        <div class="counter"> 
-            <span class="minus"> -</span>
-            <span class="num">01</span>
-            <span class="plus">+</span>
+  </head>
+  <body class="page-wrapper">
+    <div class="container">
+        <h1>Gerador de senha</h1>
+      <div class="top">
+        <div class="label-default" id="label1">
+          <label for="upper">upperCase</label>
+          <input type="checkbox" name="upper" />
         </div>
-        
+        <div class="label-default" id="label2">
+          <label for="number">number</label>
+          <input type="checkbox" name="number" />
+        </div>
+        <div class="label-default" id="label3">
+          <label for="lower">lowerCase</label>
+          <input type="checkbox" name="lower" />
+        </div>
+        <div class="label-default" id="label4">
+          <label for="symb">symbol</label>
+          <input type="checkbox" name="symb" />
+        </div>
+
+        <div class="output">
+            <input type="text">
+        </div>
+      </div>
+      <div class="bottom">
+        <button class="generate">Gerar</button>
+        <button class="copy">Copiar !</button>
+      </div>
     </div>
-    
-</body>
+
+    <!-- <div class="counter-container">
+      <div class="counter">
+        <span class="minus"> -</span>
+        <span class="num">01</span>
+        <span class="plus">+</span>
+      </div>
+    </div> -->
+  </body>
 </html>

@@ -1,14 +1,20 @@
 /* Initial css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family:  "Helvetica Neue",Helvetica,;
+    font-family: 'Noto Sans', sans-serif;
     
 }
 
+html {
+    width: 100%;
+}
+
 .page-wrapper {
-    background:#eb7f7f;
+    background:#5BBA6F;
 }
 
 .counter-container{
@@ -44,4 +50,77 @@
     font-size: 20px;
     border-right: 2px solid rgba(0,0,0,0.2);
     border-left: 2px solid rgba(0,0,0,0.2);
+}
+
+.container {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.container > h1 {
+    font-size: 60px;
+    margin-bottom: 200px;
+    color: #054A29;
+}
+
+.label-default > label {
+    font-size: 30px;
+    
+}
+
+.label-default > input {
+    width: 25px;
+    height: 20px;
+    margin: 30px;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    flex-wrap: wrap;
+    background: #2A9134;
+    border-radius: 10px;
+}
+
+.output {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 20px 0;
+}
+
+.output > input {
+    width: 90%;
+    height: 40px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    margin-top: 50px;
+}
+
+.bottom > button {
+    background: #137547;
+    width: 50%;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.generate {
+    margin-right: 10px;
+}
+
+#label3 {
+    align-self: flex-end;
 }

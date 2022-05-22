@@ -67,8 +67,7 @@ const generateNumber = () => {
 generateOutput.addEventListener("click", generatePassword());
 
 copyOutput.addEventListener("click", () => {
-    /* Get the text field */
-
+ 
     /* Select the text field */
     copyOutput.select();
     copyOutput.setSelectionRange(0, 99999); /* For mobile devices */
